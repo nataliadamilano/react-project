@@ -1,0 +1,29 @@
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 250px;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 15px;
+}
