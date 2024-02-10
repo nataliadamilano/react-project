@@ -1,29 +1,103 @@
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Palanquin:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&display=swap');
 
-
-.product-card {
+.product-card{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    width: 500px;
-    height: 200px;
+    width: 580px;
+    height: 250px;
     margin-top: 10px;
     border-radius: 5px;
-    text-align: center;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 30px;
+    gap: 5px;
+}
+
+.card-info h2{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4B535C;
+}
+
+.card-info h1 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 6px 0;
+    padding-right: 60px;
+    color: black;
+}
+
+.card-info a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #3483FA;
+    color: white;
+    height: 35px;
+    width: 125px;
+    border-radius: 2px;
 }
 
 .product-card img {
-    width: 250px;
+    width: 270px;
     height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .card-title {
     font-size: 15px;
+}
+
+@media (max-width: 1920px) {
+    .product-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .product-card {
+        margin-bottom: 10px;
+    }
+    body{
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 320px;
+        height: 125px;
+    }
+
+    .product-card img {
+        width: 135px;
+        height: 100%;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    body {
+        height: auto;
+    }
 }

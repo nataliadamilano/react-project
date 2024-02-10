@@ -2,11 +2,15 @@ import './Cards.css'
 
 const Cards = ({ props }) => {
 
-  const { title, image } = props
+  const { secondaryHeader, title, image, btnTitle } = props
   return (
     <>
       <div className="product-card">
-        <h3 className="card-title">{title}</h3>
+        <div className="card-info">
+          <h2>{secondaryHeader}</h2>
+          <h1>{title}</h1>
+          <a href="#">{btnTitle}</a>
+        </div>
         <img src={image} alt="" />
       </div>
     </>
