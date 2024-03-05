@@ -1,0 +1,30 @@
+/* Estilos para la card del contacto */
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact-info-container{
+    width: 100%;
+}
+
+.contact-info-container .contact-name{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr{
+    margin-bottom: 2px;
+}
+
+.contact-info-container p{
+    text-align: initial;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.contact-info-container .fa-phone, .fa-envelope, .fa-house{
+    margin-right: 5px;
+}

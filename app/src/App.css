@@ -1,36 +1,70 @@
-.cards-container {
+/* Estilos para el contenedor padre en donde se renderiza todo de App */
+
+.container{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-flow: row wrap;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    gap: 10%;
     align-items: center;
-    gap: 15px;
+    width: 800px;
+    height: 500px;
+}
+
+.container .title {
+    align-self: flex-start;
+}
+
+/* Estilos de la barra en donde está el filtro de búsqueda y agreegar contacto */
+
+.bar-container{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
     width: 100%;
 }
 
-
-@media (max-width: 2599px) {
-    .cards-container{
-        padding: 0 20%;
-    }
+.fa-address-book{
+    margin: 5px 5px 0 0;
 }
 
-@media (max-width: 1920px) {
-    .cards-container {
-        padding: 0 5%;
-    }
+.add-search-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 20%;
+    justify-content: flex-end;
+    width: 250px;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.441);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+/* Estilos del contenedor principal cuando no hay contactos agregados */
+
+.add-first-contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-@media (max-width: 1440px) {
-    .cards-container {
-        padding: 0 5%;
-        gap: 25px;
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 100%;
     }
-}
-
-@media (max-width: 1280px) {
-    .cards-container {
-        padding: 5% 5%;
+    .container .title{
+        position: absolute;
+        bottom: 100%;
+    }
+    .add-search-container{
+        top: 100%;
+        width: 200px;
+        height: 50px;
     }
 }

@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 body{
-  background-color: #EBEBEB;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(-45deg, #d440f2, #901def, #23A6D5, #23D5AB);
+  background-size: 800% 800%;
+  animation: background-change 20s ease-in-out infinite;
+  margin: 0;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes background-change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }

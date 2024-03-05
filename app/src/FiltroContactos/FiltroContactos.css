@@ -1,0 +1,68 @@
+/* Estilos del Filtro de búsqueda */
+
+.search-container{
+    display: flex;
+    position: relative;
+    width: 80%;
+}
+
+.search-container input{
+    border-radius: 25px;
+    padding: 5px 5px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.767);
+    border: none;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.fa-search{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+/* Estilos de la lista filtrada */
+
+.filtered-contact-list{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-49%, 70px);
+    margin: 0;
+    list-style: none;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 800px;
+    padding: 5px;
+    gap: 1rem;
+}
+
+/* Estilos de los botones para el slider de contactos */
+
+.btns-filtered-list-container .btn-right, .btn-left{
+    position: absolute;
+    top: 422%;
+    margin: 0;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform .2s;
+}
+
+.btn-right{
+    right: -80%;
+}
+
+.btn-left{
+    left: -180%;
+}
+
+.btns-filtered-list-container .btn-right:hover, .btn-left:hover{
+    transform: scale(1.08);
+}
