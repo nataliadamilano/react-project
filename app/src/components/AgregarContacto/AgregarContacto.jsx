@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AgregarContacto.css'
-import DefaultContactPhoto from '../assets/default.png'
+import DefaultContactPhoto from '../../assets/default.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
 

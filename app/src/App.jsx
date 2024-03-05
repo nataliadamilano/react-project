@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./App.css";
-import { AgregarContacto } from "./AgregarContacto/AgregarContacto";
-import { ListaContactos } from "./ListaContactos/ListaContactos";
-import { FiltroContactos } from './FiltroContactos/FiltroContactos';
+import { AgregarContacto } from "./components/AgregarContacto/AgregarContacto";
+import { ListaContactos } from "./components/ListaContactos/ListaContactos";
+import { FiltroContactos } from './components/FiltroContactos/FiltroContactos';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
 
